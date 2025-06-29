@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        ln -sfn $DEPLOY_BASE/$TARGET $CURRENT_LINK
+                      sudo ln -sfn $DEPLOY_BASE/$TARGET $CURRENT_LINK
                     """
                 }
             }
